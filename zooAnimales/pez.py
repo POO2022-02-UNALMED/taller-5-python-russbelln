@@ -1,6 +1,4 @@
 from animal import Animal
-from gestion.zona import Zona
-from gestion.zoologico import Zoologico
 
 class Pez(Animal):
     salmones = 0

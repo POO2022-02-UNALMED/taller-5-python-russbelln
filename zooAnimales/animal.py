@@ -1,10 +1,4 @@
-from gestion.zona import Zona
-from gestion.zoologico import Zoologico
-from anfibio import Anfibio
-from pez import Pez
-from ave import Ave
-from mamifero import Mamifero
-from reptil import Reptil
+
 
 class Animal():
     _totalAnimales = 0
@@ -37,7 +31,8 @@ class Animal():
         
     def getZona(self):
         return self._zona
-    def setEdad(self, zona):
+    
+    def setZona(self, zona):
         self._zona = zona
       
     @classmethod   
@@ -52,6 +47,11 @@ class Animal():
     
     @classmethod
     def totalPorTipo(cls):
+        from zooAnimales.anfibio import Anfibio
+        from zooAnimales.ave import Ave
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.pez import Pez
+        from zooAnimales.reptil import Reptil
         s = "Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"+"Aves: "+Ave.cantidadAves()+"\n"+"Reptiles: "+Reptil.cantidadReptiles()+"\n"+"Peces: "+Pez.cantidadPeces()+"\n"+"Anfibios: "+Anfibio.cantidadAnfibios()
     
     def __str__(self):

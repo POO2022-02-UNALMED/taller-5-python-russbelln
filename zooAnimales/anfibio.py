@@ -1,6 +1,5 @@
 from animal import Animal
-from gestion.zona import Zona
-from gestion.zoologico import Zoologico
+
 
 class Anfibio(Animal):
     salamandras = 0
