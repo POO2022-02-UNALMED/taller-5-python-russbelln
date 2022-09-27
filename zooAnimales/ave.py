@@ -1,6 +1,6 @@
 from animal import Animal
-from gestion.Zona import Zona
-from gestion.Zoologico import Zoologico
+from gestion.zona import Zona
+from gestion.zoologico import Zoologico
 
 class Ave(Animal):
     aguilas = 0
