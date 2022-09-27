@@ -19,12 +19,12 @@ class Reptil(Animal):
         return "reptar"
     
     @classmethod
-    def crearIguana(cls, nombre, edad, genero):
-        cls.iguanas +=1
+    def crearIguana(cls, nombre, edad, genero=None):
+        Reptil.iguanas +=1
         return Reptil(nombre, edad, "humedal", genero, "verde", 3)
-    
-    def crearSerpiente(cls, nombre, edad, genero):
-        cls.serpientes +=1
+    @classmethod
+    def crearSerpiente(cls, nombre, edad, genero=None):
+        Reptil.serpientes +=1
         return Reptil(nombre, edad, "jungla", genero, "blanco", 1) 
     
     @classmethod
