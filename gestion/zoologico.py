@@ -1,9 +1,5 @@
 from zona import Zona
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.pez import Pez
-from zooAnimales.ave import Ave
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.reptil import Reptil
+from zooAnimales.animal import animal
 
 class Zoologico():
     def __init__(self, nombre, ubicacion, zonas=None):

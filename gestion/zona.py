@@ -1,8 +1,4 @@
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.pez import Pez
-from zooAnimales.ave import Ave
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.reptil import Reptil
+from zooAnimales.animal import Animal
 from zoologico import Zoologico
 
 class Zona():
