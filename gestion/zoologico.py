@@ -13,7 +13,7 @@ class Zoologico():
         t = 0
         q = 0
         while q < len(self._zonas):
-            total += self._zonas[q].cantidadAnimales()
+            t += self._zonas[q].cantidadAnimales()
             q += 1
         return t
             

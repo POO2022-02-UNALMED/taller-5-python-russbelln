@@ -11,7 +11,9 @@ class Zona():
         animal.setZona(self)
         
     def cantidadAnimales(self):
-        return len(self._animales)
+        k = len(self._animales)
+        print(k)
+        return k
     
     def getNombre(self):
         return self._nombre
